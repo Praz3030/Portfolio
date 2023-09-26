@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css"/> 
+</head>
+<body>
+    <nav id="navi">
+        <div class="logo">Prasad Borkar</div>
+
+        <div>
+            <ul class="navi_link">
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./certificates.html">Certificates</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger_nav">
+        <div class="logo">Prasad Borkar</div>
+        <div class="hamburger_menu">
+            <div class="hamburger_icon" onclick="toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menul">
+                <li><a href="./about.html" onclick="toggle()">About Me</a></li>
+                <li><a href="./projects.html" onclick="toggle()">Projects</a></li>
+                <li><a href="./certificates.html" onclick="toggle()">Certificates</a></li>  
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sec_pic_container">
+            <img src="./Resources/profile_img2.png" alt="Prasad borkar profile pic" id="praz">
+        </div>
+        <div class="sec_text">
+            <p class="sec_p">Hello Everyone!!!</p>
+            <h1 class="title">Prasad Borkar</h1>
+            <p class="sec_p1">Computer Engineering Student</p>
+            <div class="btn_cont">
+                <button class="btn btn_color" onclick="window.open('./Resources/CV PRASAD BORKAR.pdf')">Download cv</button>
+                <button class="btn btn_color1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social_cont">
+                <img src="./Resources/linkedin.png" alt="MY Linkdin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/prasad-borkar-21455b229'"/>
+                <img src="./Resources/github.png" alt="MY Github Profile" class="icon" onclick="location.href='https://github.com/Praz3030'"/>
+                <img src="./Resources/insta.png" alt="MY Instagram Profile" class="icon" onclick="location.href='https://www.instagram.com/prasad_3030_/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="sec_p">Want to Reach me out!!!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_cont_up">
+            <div class="contact_info_cont">
+                <img src="./Resources/email.png" alt="email icon" class="icon contact_icon"/>
+                <p><a href="mailto:prasadborkar523@gmail.com">prasadborkar523@gmail.com</a></p>
+            </div>
+            <div class="contact_info_cont">
+                <img src="./Resources/phone_num.png" alt="email icon" class="icon contact_icon"/>
+                <p id="b">8625815373</p>
+            </div>
+        </div>
+        
+
+    </section>
+    <footer>
+        <nav>
+            <div class="navi_link_cont">
+                <ul class="navi_link">
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./certificates.html">Certificates</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p id="b">copyright &#169; 2023 Prasad Borkar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
